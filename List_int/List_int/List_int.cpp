@@ -144,10 +144,6 @@ Node* Insert(Node*& tHead, int tData)
 
 Node* Append(Node*& tHead, int tData)
 {
-    if (!tHead->next) {
-        tHead->next = new Node{ tData,nullptr };
-        return tHead;
-    }
     Node* ptr = tHead;
     while (ptr->next) {
         ptr = ptr->next;
